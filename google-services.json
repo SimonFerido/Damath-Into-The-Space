@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "510134256350",
+    "firebase_url": "https://damath-e8155-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "damath-e8155",
+    "storage_bucket": "damath-e8155.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510134256350:android:d845543c33f9e59a4f784f",
+        "android_client_info": {
+          "package_name": "Damath: Into the Space"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510134256350-83d0mqenqt4lt02q0jk6abjk59fce8e3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "Damath: Into the Space",
+            "certificate_hash": "b750ab417fdb07680b9805760213880045146955"
+          }
+        },
+        {
+          "client_id": "510134256350-f2m6rf4qkt1qogq04ie2830oseobe3gm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIiMAmVTb4RkyPb5H4gvYa_dhTOqqwGqk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "510134256350-f2m6rf4qkt1qogq04ie2830oseobe3gm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

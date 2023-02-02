@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu.HowToPlayActivity">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="@dimen/_400sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/head_trapezoid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/frame_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.615" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20sdp"
+        android:fontFamily="@font/rog_font"
+        android:text="Rules"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_30sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toTopOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="0.735" />
+
+    <Button
+        android:id="@+id/btnBackID"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/btn_arrow"
+        android:rotation="180"
+        app:backgroundTint="@color/pink"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toStartOf="@+id/imageView9"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/stars_bg"
+        app:layout_constraintVertical_bias="0.548" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_margin="@dimen/_30sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.349"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+    <LinearLayout
+        android:id="@+id/jump"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toStartOf="@+id/boardrulse"
+        app:layout_constraintHorizontal_bias="0.349"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/jump">
+
+
+            <TextView
+                android:id="@+id/textrules"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_210sdp"
+                android:layout_gravity="center_vertical|start|top"
+                android:gravity="start"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:fontFamily="@font/sansseridbookflf"
+                android:text="• Set the starting position of the chips.\n\n
+• Toss a coin to determine which player will have the first move. Moving a chip means sliding it diagonally in the forward direction only except when
+taking an opponents chip or if a 'dama' chip takes an opponent's chip.\n\n
+• The two players alternately take turns moving a chip (pass is not allowed). A player
+touches a chip ('touch move') is required to move unless it is not possible to do so.
+After each move. a player has to re cord his or her move in a scoresheet (only one
+scoresheet will be used by the two players).\n\n
+• Each player is allotted one minute per move including the recording of the move and
+the corresponding score in the scoresheet. In as much as taking a chip or chips is
+mandatory, then the one-minute per 'move' does not apply in this situation. In taking an
+opponents chip the taker chip jumps over the taken chip and uses any of the four operation symbols of +, -, ×,and ÷. and the taker chip lands.\n\n
+• A chip is declared 'dama' if it stops in any of the following squares of the opposing player: (1, 0) (3, 0) (5, 0) (7, 0). Similarly the opposing player's chip is declared 'dama' if it
+stops in any of the following squares (0, 7) (2, 7) (4, 7) (6, 7). A 'dama' chip can slide diagonally forward or backward in any unoccupied square as long as no opponent's chip
+blocks its path. It could take a chip or chips whereby its corresponding sum, difference, product or quotient is doubled. Similarly, if an ordinary chip takes an opponent's 'dama'
+chip, its score is also doubled. Correspondingly. if a 'dama' chip takes an opponent's
+'dama' chip, then its score is quadrupled. A taker chip can take one chip or more than
+one chips with the required option to take the greater number of chips. Between 'dama' chip taking an opponent's chip and a chip taking an opponents chip the former
+prevails. A taker or taken 'dama' chip should be identified by encircling it in the scoresheet.\n\n
+• The game ends if. the 20 minute game period lapsed the moves are repetitive a
+player has no more chips to move an opponents chip is cornered.\n\n
+• The remaining chip or chips of the players are to be added to their respective scores. If
+the remaining chip is a dama, then its score is also doubled.\n\n
+• The player with the greater accumulated total score wins the game."
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:translationZ="120dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.499"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.041" />
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/boardrulse"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_login"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout">
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/damatrules" />
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/stars_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_black"
+        android:translationZ="-1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_editor_absoluteX="@dimen/_39sdp"
+        app:layout_editor_absoluteY="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

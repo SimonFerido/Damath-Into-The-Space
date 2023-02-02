@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">Damath: Into the Space</string>
+    <string name="start">One player has 12 red pieces, the other has the 12 blue ones in the starting position."</string>
+    <string name="h2pmove">Pieces only move diagonally forward and only one space at a time. Only the white squares of the board are used.</string>
+    <string name="jump">If a player\'s piece can leap over an opponent\'s piece and into an empty space, the opponent\'s piece is captured and removed from the board.When feasible, jump. This capturing is required; if the player fails or forgets, the player may remove an opponent\'s piece.</string>
+
+    <string name="two_player">Two-Player</string>
+    <string name="one_player">Players Start</string>
+
+    <string name="restart">Game Restarted</string>
+    <string name="possibleMoves">You have these possible move(s): %1$s</string>
+    <string name="invalCoor">Invalid Coordinates</string>
+    <string name="winMsg">%1$s wins!</string>
+
+    <string name="blackPieceCount">Black Pieces: %1$d</string>
+    <string name="whitePieceCount">White Pieces: %1$d</string>
+    <string name="title_activity_level_one">LevelOneActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="Move">Pieces only move diagonally forward and only one space at a time.\n Only the white squares of the board are used.</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <!--START OF CONFIG-->
+    <string name="sign_up">Sign Up</string>
+    <string name="login">Login</string>
+    <string name="play_checkers">Play Checkers</string>
+    <string name="username">Username:</string>
+    <string name="room_id">Room ID:\u0020</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="create_room">Create Room</string>
+    <string name="join">Join</string>
+    <string name="player1">Lobby:\u0020</string>
+    <string name="player2">Opponent:\u0020</string>
+    <string name="surrender">Surrender</string>
+    <string name="credit">Credits</string>
+    <string name="logo">Logo</string>
+    <string name="images">Images</string>
+    <string name="sound">Sounds</string>
+    <string name="game_mode">\u0020</string>
+
+    <!--USER CONFIG-->
+    <string name="_user_user">\u0020</string>
+    <string name="win">\u0020</string>
+    <string name="lose">\u0020</string>
+    <string name="winr">\u0020</string>
+    <string name="rank">\u0020</string>
+    <string name="_user_email">\u0020</string>
+    <string name="password">Password: ********</string>
+    <string name="change_pass"><u>change password</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--CALCULATOR-->
+    <string name="oneText">1</string>
+    <string name="twoText">2</string>
+    <string name="threeText">3</string>
+    <string name="fourText">4</string>
+    <string name="fiveText">5</string>
+    <string name="sixText">6</string>
+    <string name="sevenText">7</string>
+    <string name="eightText">8</string>
+    <string name="nineText">9</string>
+    <string name="zeroText">0</string>
+
+    <string name="clearText">C</string>
+    <string name="parenthesesOpenText">(</string>
+    <string name="parenthesesCloseText">)</string>
+    <string name="divideText">÷</string>
+    <string name="multiplyText">×</string>
+    <string name="addText">+</string>
+    <string name="subtractText">-</string>
+    <string name="decimalText">.</string>
+    <string name="equalsText">=</string>
+
+    <string name="trigSinText">sin</string>
+    <string name="trigCosText">cos</string>
+    <string name="trigTanText">tan</string>
+    <string name="trigArcSinText">sin<sup><small>-1</small></sup></string>
+    <string name="trigArcCosText">cos<sup><small>-1</small></sup></string>
+    <string name="trigArcTanText">tan<sup><small>-1</small></sup></string>
+    <string name="naturalLogText">ln</string>
+    <string name="LogText">log</string>
+    <string name="squareRootText">√</string>
+    <string name="absoluteValueText">|x|</string>
+    <string name="piText">π</string>
+    <string name="eText">e</string>
+    <string name="xSquaredText">x<sup><small>2</small></sup></string>
+    <string name="xPowerYText">x<sup><small>y</small></sup></string>
+    <string name="isPrimeFunctionText">prime</string>
+
+    <string name="backspace"> </string>
+
+</resources>

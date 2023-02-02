@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".User.IndicatorVictory">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cdVictorID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+       >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_180sdp"
+            android:src="@drawable/_indicator_victory"/>
+
+            <Button
+                android:id="@+id/btnVContinueID"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#B32C2C"
+                android:text="CONTINUE"
+                android:fontFamily="@font/sansserifbldflf"
+                android:onClick="continueOnClick"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.cardview.widget.CardView>
