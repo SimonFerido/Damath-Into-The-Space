@@ -199,18 +199,4 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
         app:layout_constraintVertical_bias="0.333" />
 
-    <TextView
-        android:id="@+id/tvOnlinePlayers"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/sansseridbookflf"
-        android:text="Online Users: 0"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="@+id/videoView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView4"
-        app:layout_constraintHorizontal_bias="0.042"
-        app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
-        app:layout_constraintVertical_bias="0.327" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

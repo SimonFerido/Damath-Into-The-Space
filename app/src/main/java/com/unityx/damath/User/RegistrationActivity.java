@@ -49,6 +49,7 @@ public class RegistrationActivity extends AppCompatActivity {
     private EditText regPassword, regCPassword;
     private Button btnSignup;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+    String userPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
 
     //AUTHENTICATION
     private FirebaseUser user;

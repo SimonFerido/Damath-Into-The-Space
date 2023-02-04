@@ -11,7 +11,6 @@ public class Player extends RoomManager implements Serializable{
     private String username;
     private String email;
     private String id;
-    private String version;
     private int win;
     private int loss;
     private String winningRate;
@@ -25,10 +24,6 @@ public class Player extends RoomManager implements Serializable{
         this.win = 0;
         this.loss = 0;
     }
-
-    public String getVersion(){return version;}
-
-    public void setVersion(String version){this.version = version ;}
 
     public String getUsername() {
         return username;

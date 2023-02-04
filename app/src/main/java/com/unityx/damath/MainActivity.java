@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton userCustom;
     private ImageButton userHowto;
     private ImageButton userLeaderbaords;
-    private TextView tvGreeting, tvVersionCode, tvOnlinePlayers;
+    private TextView tvGreeting, tvVersionCode;
 
     //MEDIAPLAYER
     private View decorView;
@@ -187,19 +187,6 @@ public class MainActivity extends AppCompatActivity {
         refSignUpPlayers = database.getReference("Signed Up Players");
         refUsername = database.getReference("username");
         refVersion = database.getReference("version");
-        tvOnlinePlayers = findViewById(R.id.tvOnlinePlayers);
-        refSignUpPlayers.addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                long onlineUsers = dataSnapshot.getChildrenCount();
-                tvOnlinePlayers.setText("Online Users: " + onlineUsers);
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                // Handle error
-            }
-        });
 
         mAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override

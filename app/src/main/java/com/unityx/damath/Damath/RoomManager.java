@@ -32,8 +32,8 @@ public class RoomManager {
     public int idGenerator() {
         boolean generating = true;
         int min = 1;
-        int max = 5000;
-        int range = (5000 - 1) + 1;
+        int max = 999999;
+        int range = (999999 - 1) + 1;
         int random = (int) (Math.random() * range) + min;
         while (generating){
             if(roomList.size() < 0) {
