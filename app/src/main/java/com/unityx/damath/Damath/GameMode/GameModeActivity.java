@@ -12,6 +12,7 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.VideoView;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -56,6 +57,15 @@ public class GameModeActivity extends AppCompatActivity {
     private RoomManager roomManager = new RoomManager();
     private List<Integer> unavailableRoomIdList = new ArrayList<>();
 
+    private TextView TVRadicalRoom, TVPolynomialRoom, TVFractionRoom;
+
+    private DatabaseReference radicalRef = database.getReference("Room")
+            .child("radical").child("available");
+    private DatabaseReference polynomialRef = database.getReference("Room")
+            .child("polynomial").child("available");
+    private DatabaseReference fractionRef = database.getReference("Room")
+            .child("fraction").child("available");
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -84,6 +94,48 @@ public class GameModeActivity extends AppCompatActivity {
             @Override
             public void onPrepared(MediaPlayer mediaPlayer) {
                 mediaPlayer.setLooping(true);
+            }
+        });
+
+        TVRadicalRoom = findViewById(R.id.tvRadicalCount);
+        radicalRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                long radicalRoom = snapshot.getChildrenCount();
+                TVRadicalRoom.setText("" + radicalRoom);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+        TVPolynomialRoom = findViewById(R.id.tvPolynomialCount);
+        polynomialRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                long radicalRoom = snapshot.getChildrenCount();
+                TVPolynomialRoom.setText("" + TVPolynomialRoom);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+        TVFractionRoom = findViewById(R.id.tvFractionCount);
+        fractionRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                long radicalRoom = snapshot.getChildrenCount();
+                TVFractionRoom.setText("" + TVFractionRoom);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
             }
         });
 
